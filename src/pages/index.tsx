@@ -19,13 +19,16 @@ const Home: NextPage = () => {
   const musicList:Array<music> = data
   return (
     <>
-      <Button onClick={() => Router.push('/create')}>追加</Button>
+      <Button css={{ margin: 10 }} onClick={() => Router.push('/create')}>
+        追加
+      </Button>
 
       <Table
         aria-label='曲リスト'
         css={{
           height: 'auto',
           minWidth: '100%',
+          margin: 20,
         }}
       >
         <Table.Header>
