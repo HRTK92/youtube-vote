@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           {musicList &&
             musicList.map((music, index) => (
               <Table.Row key={index}>
-                <Table.Cell>{music.url}</Table.Cell>
+                <Table.Cell><a href={music.url}>{music.url}</a></Table.Cell>
                 <Table.Cell>{music.composer}</Table.Cell>
                 <Table.Cell>{music.genre}</Table.Cell>
               </Table.Row>
