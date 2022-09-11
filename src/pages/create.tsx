@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   )
   const [ytUrl, setYtUrl] = useState<string>('')
   const [composer, setComposer] = useState<string>('')
-  const [genre, setGenre] = useState<string>('アニメ')
+  const [genre, setGenre] = useState<string>('ゲーム')
   const [hook, setHook] = useState<string>('')
   const [isNext, setIsNext] = useState<boolean>(false)
   const [showSubmit, setShowSubmit] = useState<boolean>(false)
@@ -47,9 +47,10 @@ const Home: NextPage = () => {
     setProgress(list[list.indexOf(progress) + 1] || 'URL')
   }
   const genres = [
-    { key: 'anime', name: 'アニメ' },
     { key: 'game', name: 'ゲーム' },
+    { key: 'anime', name: 'アニメ' },
     { key: 'jpop', name: 'J-POP' },
+    { key: 'western', name: '洋楽' },
   ]
   const send = async () => {
     await fetch(
