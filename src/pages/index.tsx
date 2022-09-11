@@ -23,7 +23,6 @@ const Home: NextPage = () => {
         追加
       </Button>
       {!data && <Loading />}
-      
       <Table
         aria-label='曲リスト'
         css={{
