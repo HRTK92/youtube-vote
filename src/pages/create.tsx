@@ -48,6 +48,7 @@ const Home: NextPage = () => {
   }
   const genres = [
     { key: 'game', name: 'ゲーム' },
+    { key: 'vocaloid', name: 'ボーカロイド' },
     { key: 'anime', name: 'アニメ' },
     { key: 'jpop', name: 'J-POP' },
     { key: 'western', name: '洋楽' },
