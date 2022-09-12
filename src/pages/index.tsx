@@ -1,4 +1,4 @@
-import { Button, Loading, Table } from '@nextui-org/react'
+import { Button, Loading, Table, Text } from '@nextui-org/react'
 import { NextPage } from 'next'
 import Link from 'next/link'
 import useSWR from "swr"
@@ -23,6 +23,7 @@ const Home: NextPage = () => {
         追加
       </Button>
       {!data && <Loading />}
+      {musicList && (<Text css={{margin:10}}>現在{musicList.length+1}曲あります</Text>)}
       <Table
         aria-label='曲リスト'
         css={{
