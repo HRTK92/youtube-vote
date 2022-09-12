@@ -9,7 +9,7 @@ type helperType = {
 }
 
 const Home: NextPage = () => {
-  //return (<></>)
+  return (<></>)
   const [progress, setProgress] = useState<'URL' | 'composer' | 'genre' | 'hook' | 'confirmation'>(
     'URL'
   )
