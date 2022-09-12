@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         追加
       </Button>
       {!data && <Loading />}
-      {musicList && (<Text css={{margin:10}}>現在{musicList.length+1}曲あります</Text>)}
+      {musicList && (<Text css={{margin:10}}>現在{musicList.length}曲あります</Text>)}
       <Table
         aria-label='曲リスト'
         css={{
