@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         method: 'POST',
       }
     )
-    await Router.push('/')
+    Router.push('/')
   }
 
   return (
